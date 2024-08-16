@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <title>KFC Project</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <h3>Crear un nuevo producto</h3>
+      <div>
+        <label>Nombre</label>
+        <input placeholder="nombre del producto" id="nombre" />
+      </div>
+      <div>
+        <label>Imagen</label>
+        <input placeholder="imagen del producto" id="imagen" />
+      </div>
+      <div>
+        <label>Precio</label>
+        <input placeholder="precio del producto" id="precio" type="number" />
+      </div>
+      <div>
+        <label>Tipo</label>
+        <select id="tipo">
+          <option value="hamburguesa">Hamburguesa</option>
+          <option value="wrap">Wrap</option>
+          <option value="acompañante">Acompañante</option>
+          <option value="bebida">Bebida</option>
+        </select>
+      </div>
+      <button type="button">PUBLICAR</button>
+    </form>
+    <div class="productos">
+      <div class="hamburguesas"></div>
+      <div class="wraps"></div>
+      <div class="acompañantes"></div>
+      <div class="bebida"></div>
+    </div>
+  </body>
 </html>
